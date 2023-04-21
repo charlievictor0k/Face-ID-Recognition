@@ -129,15 +129,6 @@ def detect(request):
     return redirect('/')
 
 def trainer(request):
-    '''
-        In trainer.py we have to get all the samples from the dataset folder,
-        for the trainer to recognize which id number is for which face.
-
-        for that we need to extract all the relative path
-        i.e. dataset/user.1.1.jpg, dataset/user.1.2.jpg, dataset/user.1.3.jpg
-        for this python has a library called os
-    '''
-
     # Path for face image database
     path = BASE_DIR + '/ml/dataset'
     recognizer = cv2.face.LBPHFaceRecognizer_create()

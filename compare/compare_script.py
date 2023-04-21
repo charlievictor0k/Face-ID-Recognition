@@ -1,10 +1,6 @@
 import face_recognition
 
 # Load the images
-
-
-
-
 img1 = face_recognition.load_image_file("vijay.jpg")
 img2 = face_recognition.load_image_file("shashank.jpg")
 
